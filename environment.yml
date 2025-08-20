@@ -1,0 +1,12 @@
+﻿name: un-portfolio
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - jupyterlab
+  - ipykernel
+  - pandas
+  - numpy
+  - matplotlib
+  - statsmodels
+  - scikit-learn
