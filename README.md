@@ -5,7 +5,7 @@ simple dashboards, and short briefs. Aim: clarity, open methods, and respectful 
 
 **Folders**
 - notebooks/: analysis notebooks
-- data/: keep only tiny samples (no raw/PII)
+- data/: tiny samples (no raw/PII)
 - reports/: PDFs (briefs, concept notes, CV)
 - assets/: images, maps
 - scripts/: reusable helpers
