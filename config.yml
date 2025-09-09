@@ -1,0 +1,29 @@
+# --- Site basics ---
+title: George Odongo – UN & PhD Portfolio
+description: A modest, reproducible portfolio on SDG 2/12/13: analyses, maps, briefs, and methods.
+url: "https://<your-username>.github.io"   # replace with your GitHub Pages root (no trailing slash)
+baseurl: "/un-portfolio"                   # if your repo is NOT your username.github.io; else leave "".
+
+# --- Theme & plugins (GitHub Pages–compatible) ---
+theme: minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# --- Nav order (shows across the top) ---
+header_pages:
+  - portfolio.md
+  - research.md
+  - writing.md
+  - ethics.md
+  - cv.md
+
+# --- Minima theme options ---
+minima:
+  social_links:
+    - { platform: github,  user_url: "https://github.com/<your-username>" }
+    - { platform: linkedin, user_url: "https://www.linkedin.com/in/<your-handle>/" }
+
+# --- Markdown/rendering ---
+markdown: kramdown
+show_excerpts: true
