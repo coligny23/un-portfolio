@@ -1,0 +1,11 @@
+## 1.1) 2030 Agenda — Key Takeaways (UNITAR)
+- The 2030 Agenda is a shared blueprint for people, planet, prosperity, peace, and partnership (“5Ps”).
+- It is universal (all countries), integrated (goals interlink), with a pledge to leave no one behind.
+- Four 2015 cornerstones: 2030 Agenda, Paris Agreement, Addis Ababa Action Agenda, Sendai Framework.
+- 17 SDGs, 169 targets—measured through a global indicator framework.
+- Means of implementation: finance, technology, capacity-building, trade, and systemic issues.
+- Follow-up & review via the High-Level Political Forum (HLPF).
+- Voluntary National Reviews (VNRs) enable learning and peer exchange.
+- Multi-stakeholder participation (gov’t, civil society, academia, private sector, youth) is essential.
+- Strong national data systems align to SDG indicators for evidence-based policy.
+- Integration across goals is key—food systems link SDG 2, 12, and 13.
