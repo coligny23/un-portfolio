@@ -4,7 +4,7 @@
 ## 1) Context (≤100 words)
 Food insecurity, post-harvest losses, and climate stress reinforce each other in Tanzania and across East Africa. While households face volatile food prices, edible produce is still lost along value chains due to handling, storage, transport, and market mismatches. Reducing loss and redirecting surplus can simultaneously advance **SDG 2 (Zero Hunger)** by improving access, **SDG 12 (Responsible Consumption/Production)** by preventing waste (Target 12.3), and **SDG 13 (Climate Action)** by avoiding emissions from decomposing organic waste. My contribution is a small, reproducible portfolio: open analyses of key indicators, a geospatial view of access constraints, and a pre-analysis plan for a low-cost behavioral/logistics pilot—packaged as briefs, dashboards, and code.
 ## 1.1) 2030 Agenda — Key Takeaways (UNITAR)
-See detailed notes: [/reports/notes_unitar_fao.md]
+See detailed notes: [/reports/notes_unitar_fao.md] (/reports/notes_unitar_fao.md).
 
 ## 2) Problem Signal (facts & trends)
 **Common drivers of food loss/waste (SDG 12.3 context)**
