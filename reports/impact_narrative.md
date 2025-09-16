@@ -6,6 +6,15 @@ Food insecurity, post-harvest losses, and climate stress reinforce each other in
 ## 1.1) 2030 Agenda — Key Takeaways (UNITAR)
 See detailed notes: [/reports/notes_unitar_fao.md] (/reports/notes_unitar_fao.md).
 
+## 1.2) FAO — Sustainable Food Systems (Key Takeaways)
+- Food systems span production → aggregation/processing → distribution/retail → consumption → waste.
+- Leverage points: improved storage & handling; cold chain; market linkages; behavior change; data visibility.
+- Governance matters: multi-stakeholder coordination across ministries, private sector, and local actors.
+- Equity lens: smallholders and low-income consumers are most sensitive to loss, price swings, and shocks.
+- SDG 12.3 links: prevent loss/waste upstream (FLI) and measure waste at retail/food service/households (FWI).
+- Climate co-benefits: avoided waste lowers methane; better logistics reduces emissions intensity.
+
+
 ## 2) Problem Signal (facts & trends)
 **Common drivers of food loss/waste (SDG 12.3 context)**
 - Post-harvest handling & storage gaps (spoilage, pests, moisture).
