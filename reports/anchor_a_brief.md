@@ -50,7 +50,7 @@ World Bank WDI (CSV bundles):
 
 ---
 
-## 12.3 Alignment (New)
+## 12.3 Alignment 
 
 **What we added today.** Household food-waste signals from the **UNEP Food Waste Index 2024** (city/district studies), plus an optional conversion to national **tonnes** using WDI population. These are **context** datapoints to complement POU/CPI; they are not nationally representative and should be read with care.
 
@@ -85,8 +85,6 @@ Using **WDI population (SP.POP.TOTL)**, the notebook computes `tonnes_est = kg_p
 | **Rwanda** | 2023 | **1,668,018 t** (~**1.67 Mt**) |
 | **Uganda** | 2021 | **4,451,343 t** (~**4.45 Mt**) |
 | **Tanzania** | 2023 | **1.679724e+07** |
-
-\*Tanzania shows **TBD** because the population join used **Country Name** and your FWI table lists *United Republic of Tanzania*. After switching the join to **Country Code (TZA)**, the figure will populate. As orientation only: using the **latest** datapoint (245 kg/cap) yields a **~tens-of-millions-of-tonnes** estimate; using the **conservative median** (128 kg/cap) yields a **single-digit-millions** estimate. We will report the exact number once the code fix is applied.
 
 **Implications.** Pairing these **FWI** signals with **POU/CPI** strengthens the case for targeted **waste-to-access** pilots (e.g., routing “imperfect” produce to low-income markets and MSMEs). Where the latest datapoint is an outlier (e.g., Tanzania), use the **conservative median** for planning and present both values transparently.
 
