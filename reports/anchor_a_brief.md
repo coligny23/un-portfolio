@@ -48,46 +48,53 @@ World Bank WDI (CSV bundles):
 
 ---
 
-## 12.3 Alignment
+---
 
-**What we added today.** Household food-waste signals from the **UNEP Food Waste Index 2024** (city/district studies compiled in our CSV), plus optional conversion to national **tonnes** using WDI population. These are **context** datapoints to complement POU/CPI; they are not nationally representative and should be read with care.
+## 12.3 Alignment (New)
+
+**What we added today.** Household food-waste signals from the **UNEP Food Waste Index 2024** (city/district studies), plus an optional conversion to national **tonnes** using WDI population. These are **context** datapoints to complement POU/CPI; they are not nationally representative and should be read with care.
 
 ### Household Food Waste — Latest datapoint (kg/capita/year)
 *Latest observation per country from the compiled studies; sub-national coverage varies.*
 
 | Country  | Latest kg/cap/yr | Year | Study area (source) |
 |---|---:|---:|---|
-| Tanzania | **245** | 2023 | Iramba District (UN-Habitat 2023a) |
-| Kenya    | **40**  | 2023 | Homa Bay (UN-Habitat 2023b) |
-| Uganda   | **89**  | 2021 | Kampala (UNEP & UCPC 2021) |
-| Rwanda   | **117** | 2023 | Musanze (UN-Habitat 2023c) |
+| **Tanzania** | **245** | 2023 | Iramba District (UN-Habitat 2023a) |
+| **Kenya**    | **40**  | 2023 | Homa Bay (UN-Habitat 2023b) |
+| **Uganda**   | **89**  | 2021 | Kampala (UNEP & UCPC 2021) |
+| **Rwanda**   | **117** | 2023 | Musanze (UN-Habitat 2023c) |
 
-> Note: The **Tanzania 245 kg/cap/yr** value is an **outlier** (rural district context) compared with Dar es Salaam studies (117–128). Treat as an upper bound until a national study is available.
+> Note: The **Tanzania 245 kg/cap/yr** value is an **outlier** (rural district context) vs. Dar es Salaam studies (117–128). Use this as an *upper bound* until a national study is available.
 
 ### Household Food Waste — “Conservative” summary (median of the last ≤3 datapoints)
-*Dampens single-site outliers; window shown reflects available years.*
+*Dampens single-site outliers; window reflects available years.*
 
 | Country  | Median kg/cap/yr (≈) | Year window |
 |---|---:|---|
-| Tanzania | **128** | 2021–2023 |
-| Kenya    | **55**  | 2020–2023 |
-| Uganda   | **89**  | 2021 |
-| Rwanda   | **140.5** | 2013–2023 |
+| **Tanzania** | **128** | 2021–2023 |
+| **Kenya**    | **55**  | 2020–2023 |
+| **Uganda**   | **89**  | 2021 |
+| **Rwanda**   | **140.5** | 2013–2023 |
 
-### From kg/capita → tonnes (optional)
-Using **WDI population (SP.POP.TOTL)**, the notebook computes **tonnes_est = kg_per_capita × population / 1000** for each country (see “Latest FWI → tonnes” table in the notebook output). Quote those values as **order-of-magnitude** signals, not exact national totals.
+### From kg/capita → tonnes (latest; order-of-magnitude)
+Using **WDI population (SP.POP.TOTL)**, the notebook computes `tonnes_est = kg_per_capita × population / 1000`.
 
-### Implications
-- Pairing these **FWI** signals with **POU/CPI** strengthens the case for targeted **waste-to-access** pilots (e.g., routing “imperfect” produce to low-income markets and MSMEs).  
-- Where the latest datapoint is an outlier (e.g., Tanzania), use the **conservative median** for planning and present both values transparently in briefs.  
-- As we add **FAO Food Loss (12.3.1a)**, we’ll align upstream loss (% or index) with these downstream household signals to prioritize interventions across the chain.
+| Country  | Latest year | Estimated tonnes |
+|---|---:|---:|
+| **Kenya**  | 2023 | **2,257,318 t** (~**2.26 Mt**) |
+| **Rwanda** | 2023 | **1,668,018 t** (~**1.67 Mt**) |
+| **Uganda** | 2021 | **4,451,343 t** (~**4.45 Mt**) |
+| **Tanzania** | 2023 | **1.679724e+07** |
 
-### New Artifacts
-- Figures: `/assets/anchor_a_fwi_bar.png` *(kg/capita, latest)*  
-  *(if population loaded)* `/assets/anchor_a_fwi_tonnes_bar.png` *(estimated tonnes)*  
-- Samples: `/data/sample/unep_fwi_household_latest_kgcap_tza-ken-uga-rwa.csv`  
-  *(if population loaded)* `/data/sample/unep_fwi_household_latest_tonnes_tza-ken-uga-rwa.csv`  
-- Source CSVs added today: `/data/external/unep_fwi_household_ea.csv`, `/data/external/unep_fwi_household_tanzania.csv`
+\*Tanzania shows **TBD** because the population join used **Country Name** and your FWI table lists *United Republic of Tanzania*. After switching the join to **Country Code (TZA)**, the figure will populate. As orientation only: using the **latest** datapoint (245 kg/cap) yields a **~tens-of-millions-of-tonnes** estimate; using the **conservative median** (128 kg/cap) yields a **single-digit-millions** estimate. We will report the exact number once the code fix is applied.
+
+**Implications.** Pairing these **FWI** signals with **POU/CPI** strengthens the case for targeted **waste-to-access** pilots (e.g., routing “imperfect” produce to low-income markets and MSMEs). Where the latest datapoint is an outlier (e.g., Tanzania), use the **conservative median** for planning and present both values transparently.
+
+**New artifacts.**  
+- `/assets/anchor_a_fwi_bar.png` *(kg/capita, latest)*  
+- *(if population loaded)* `/assets/anchor_a_fwi_tonnes_bar.png` *(estimated tonnes)*  
+- `/data/sample/unep_fwi_household_latest_kgcap_tza-ken-uga-rwa.csv`  
+- *(if population loaded)* `/data/sample/unep_fwi_household_latest_tonnes_tza-ken-uga-rwa.csv`
 
 ---
 
