@@ -84,7 +84,7 @@ Using **WDI population (SP.POP.TOTL)**, the notebook computes `tonnes_est = kg_p
 | **Kenya**  | 2023 | **2,257,318 t** (~**2.26 Mt**) |
 | **Rwanda** | 2023 | **1,668,018 t** (~**1.67 Mt**) |
 | **Uganda** | 2021 | **4,451,343 t** (~**4.45 Mt**) |
-| **Tanzania** | 2023 | **1.679724e+07** |
+| **Tanzania** | 2023 | **1.679724e+07 t** (~**1.68 Mt**) |
 
 **Implications.** Pairing these **FWI** signals with **POU/CPI** strengthens the case for targeted **waste-to-access** pilots (e.g., routing “imperfect” produce to low-income markets and MSMEs). Where the latest datapoint is an outlier (e.g., Tanzania), use the **conservative median** for planning and present both values transparently.
 
