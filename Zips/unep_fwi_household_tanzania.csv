@@ -1,0 +1,5 @@
+country,iso3,study_area,kg_per_capita_yr,year,sector,source
+United Republic of Tanzania,TZA,"Kinondoni Municipality, Dar es Salaam",119,2013,household,Oberlin (2013)
+United Republic of Tanzania,TZA,Dar es Salaam City,117,2021,household,"Kihila, Wernsted & Kaseva (2021)"
+United Republic of Tanzania,TZA,Dar es Salaam,128,2021,household,UN-Habitat (2021g)
+United Republic of Tanzania,TZA,Iramba District,245,2023,household,UN-Habitat (2023a)

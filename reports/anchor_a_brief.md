@@ -48,6 +48,49 @@ World Bank WDI (CSV bundles):
 
 ---
 
+## 12.3 Alignment
+
+**What we added today.** Household food-waste signals from the **UNEP Food Waste Index 2024** (city/district studies compiled in our CSV), plus optional conversion to national **tonnes** using WDI population. These are **context** datapoints to complement POU/CPI; they are not nationally representative and should be read with care.
+
+### Household Food Waste — Latest datapoint (kg/capita/year)
+*Latest observation per country from the compiled studies; sub-national coverage varies.*
+
+| Country  | Latest kg/cap/yr | Year | Study area (source) |
+|---|---:|---:|---|
+| Tanzania | **245** | 2023 | Iramba District (UN-Habitat 2023a) |
+| Kenya    | **40**  | 2023 | Homa Bay (UN-Habitat 2023b) |
+| Uganda   | **89**  | 2021 | Kampala (UNEP & UCPC 2021) |
+| Rwanda   | **117** | 2023 | Musanze (UN-Habitat 2023c) |
+
+> Note: The **Tanzania 245 kg/cap/yr** value is an **outlier** (rural district context) compared with Dar es Salaam studies (117–128). Treat as an upper bound until a national study is available.
+
+### Household Food Waste — “Conservative” summary (median of the last ≤3 datapoints)
+*Dampens single-site outliers; window shown reflects available years.*
+
+| Country  | Median kg/cap/yr (≈) | Year window |
+|---|---:|---|
+| Tanzania | **128** | 2021–2023 |
+| Kenya    | **55**  | 2020–2023 |
+| Uganda   | **89**  | 2021 |
+| Rwanda   | **140.5** | 2013–2023 |
+
+### From kg/capita → tonnes (optional)
+Using **WDI population (SP.POP.TOTL)**, the notebook computes **tonnes_est = kg_per_capita × population / 1000** for each country (see “Latest FWI → tonnes” table in the notebook output). Quote those values as **order-of-magnitude** signals, not exact national totals.
+
+### Implications
+- Pairing these **FWI** signals with **POU/CPI** strengthens the case for targeted **waste-to-access** pilots (e.g., routing “imperfect” produce to low-income markets and MSMEs).  
+- Where the latest datapoint is an outlier (e.g., Tanzania), use the **conservative median** for planning and present both values transparently in briefs.  
+- As we add **FAO Food Loss (12.3.1a)**, we’ll align upstream loss (% or index) with these downstream household signals to prioritize interventions across the chain.
+
+### New Artifacts
+- Figures: `/assets/anchor_a_fwi_bar.png` *(kg/capita, latest)*  
+  *(if population loaded)* `/assets/anchor_a_fwi_tonnes_bar.png` *(estimated tonnes)*  
+- Samples: `/data/sample/unep_fwi_household_latest_kgcap_tza-ken-uga-rwa.csv`  
+  *(if population loaded)* `/data/sample/unep_fwi_household_latest_tonnes_tza-ken-uga-rwa.csv`  
+- Source CSVs added today: `/data/external/unep_fwi_household_ea.csv`, `/data/external/unep_fwi_household_tanzania.csv`
+
+---
+
 ## Limitations
 POU relies on modeled estimates subject to revisions; CPI is overall (not food-only). National aggregates hide sub-national heterogeneity; no causal identification is attempted here. Treat these as **context indicators** to guide where/when to test practical solutions.
 

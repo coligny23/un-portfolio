@@ -1,0 +1,16 @@
+country,iso3,study_area,kg_per_capita_yr,year,sector,source
+United Republic of Tanzania,TZA,"Kinondoni Municipality, Dar es Salaam",119,2013,household,Oberlin (2013)
+United Republic of Tanzania,TZA,Dar es Salaam City,117,2021,household,"Kihila, Wernsted & Kaseva (2021)"
+United Republic of Tanzania,TZA,Dar es Salaam,128,2021,household,UN-Habitat (2021g)
+United Republic of Tanzania,TZA,Iramba District,245,2023,household,UN-Habitat (2023a)
+Kenya,KEN,Nairobi,100,2010,household,JICA (2010)
+Kenya,KEN,Nairobi,99,2019,household,Takeuchi (2019)
+Kenya,KEN,Homa Bay,40,2023,household,UN-Habitat (2023b)
+Kenya,KEN,Kiambu County,99,2020,household,UN-Habitat (2020a)
+Kenya,KEN,Mombasa County,80,2020,household,UN-Habitat (2020b)
+Kenya,KEN,Nairobi City County,91,2019,household,UN-Habitat (2019a)
+Kenya,KEN,Taita Taveta County,55,2022,household,UN-Habitat (2022c)
+Uganda,UGA,Kampala,89,2021,household,UNEP & Uganda Cleaner Production Centre (2021)
+Uganda,UGA,Kampala,131,,household,UN-Habitat (unpublished)
+Rwanda,RWA,Kigali,164,2013,household,Mucyo (2013)
+Rwanda,RWA,Musanze,117,2023,household,UN-Habitat (2023c)
